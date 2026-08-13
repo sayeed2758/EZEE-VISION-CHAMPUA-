@@ -1841,3 +1841,23 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;
 }
+/* =========================================
+   LOADER FAILSAFE
+========================================= */
+
+.page-loader {
+    animation: hidePageLoader 0.4s ease 1.2s forwards;
+}
+
+@keyframes hidePageLoader {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
